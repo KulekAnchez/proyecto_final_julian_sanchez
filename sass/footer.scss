@@ -1,0 +1,17 @@
+footer {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    a{
+        text-align: center;
+        color: black;
+    
+        i{
+            font-size: 50px;    
+        }
+    }
+    p {
+        font-size: 25px;
+        text-align: center;
+    }
+}
