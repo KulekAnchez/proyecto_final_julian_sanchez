@@ -1,0 +1,15 @@
+{
+  "name": "Proyecto_final_Julian_Sanchez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "purge": "purgecss --css css/custom.css --content index.html --output css/redu.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}

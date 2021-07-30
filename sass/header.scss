@@ -1,0 +1,30 @@
+//Header
+
+header{
+    a{ 
+    img{
+        width: 100%;
+        height: 100%;
+        }   
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+            li{
+                a{
+                    font-family: 'Open Sans Condensed', sans-serif;
+                    font-size: 40px;
+                    font-weight: 800;
+                    text-decoration: none;
+                    color: $black;
+                }
+            }
+        }
+    }
+
+     
+    
+        

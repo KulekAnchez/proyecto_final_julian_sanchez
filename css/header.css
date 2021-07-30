@@ -1,0 +1,20 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+ul li {
+  background-color: #6f789ba1;
+  padding: 1rem;
+  border-radius: 35%;
+}
+
+ul li a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
