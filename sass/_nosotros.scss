@@ -1,16 +1,37 @@
 /* NOSOTROS */
 
 .caja {
-    background-color: $black;
+    background-color: rgba(245, 245, 245, 0.514);
     width: 15rem;
     height: 30rem;
     margin: auto;
     margin-bottom: 2rem;
+    img{
+        width: 100%;
+        height: 45%;
+        margin-bottom: .5rem;
+    }
+    h2, h3, h4, h5, h6 {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        color: $black;
+    }
+    p {
+        font-size: 1.5rem;
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-align: center;
+        padding: .5rem;
+    }
 }
 
 @media (min-width: 768px){
     #cuerpo section {
         display: flex;
         flex-direction: row;
+    }
+
+    .caja {
+        margin-left: 1rem;
     }
 }

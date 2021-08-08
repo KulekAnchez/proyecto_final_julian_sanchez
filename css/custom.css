@@ -10,6 +10,10 @@ html {
   font-size: 15px;
 }
 
+h1, .h1 {
+  display: none;
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10329,6 +10333,7 @@ button {
   padding: 0;
 }
 
+/* MAIN */
 main img {
   padding: 15px;
   border: #3d3a3a solid 3px;
@@ -10339,13 +10344,13 @@ main img {
 main p {
   padding: 2rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-family: 'Open Sans Condensed', sans-serif;
   color: whitesmoke;
 }
 
 @media (min-width: 768px) {
-  p {
+  main p {
     font-size: 2rem;
   }
 }
@@ -10379,16 +10384,39 @@ footer p {
 
 /* NOSOTROS */
 .caja {
-  background-color: #000;
+  background-color: rgba(245, 245, 245, 0.514);
   width: 15rem;
   height: 30rem;
   margin: auto;
   margin-bottom: 2rem;
 }
 
+.caja img {
+  width: 100%;
+  height: 45%;
+  margin-bottom: .5rem;
+}
+
+.caja h2, .caja .h2, .caja h3, .caja .h3, .caja h4, .caja .h4, .caja h5, .caja .h5, .caja h6, .caja .h6 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #000;
+}
+
+.caja p {
+  font-size: 1.5rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  padding: .5rem;
+}
+
 @media (min-width: 768px) {
   #cuerpo section {
     display: flex;
     flex-direction: row;
+  }
+  .caja {
+    margin-left: 1rem;
   }
 }

@@ -1,4 +1,4 @@
-
+/* MAIN */
 
 $black: #000;
 
@@ -15,14 +15,16 @@ main{
     p {
         padding: 2rem;
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-family: 'Open Sans Condensed', sans-serif;
         color: whitesmoke;
     }
 }
 
 @media (min-width: 768px){
-    p {
-        font-size: 2rem;
+    main{
+        p {
+            font-size: 2rem;
+        }
     }
 }
