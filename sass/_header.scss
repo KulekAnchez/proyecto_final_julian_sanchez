@@ -1,11 +1,13 @@
 /* HEADER */
 
 header{
-    box-shadow: black 5px, 5px, 5px;
+    box-shadow: black 5px, 5px, 10px;
+    margin-bottom: 10vh;
     a{ 
-    img{
-        width: 100%;
-        height: 100%;
+        img{
+            width: 65%;
+            height: 19vh;
+            margin-left: 1rem;
         }   
     }
     ul{
@@ -17,14 +19,25 @@ header{
             li{
                 a{
                     font-family: 'Open Sans Condensed', sans-serif;
-                    font-size: 40px;
-                    font-weight: 800;
+                    font-size: 2rem;
+                    font-weight: 0;
                     text-decoration: none;
                     color: $black;
+                    margin-left: .5rem;
                 }
             }
-        }
     }
+}
+
+button {
+    margin-right: 1rem;
+}
+
+.container-fluid {
+    
+    margin: 0;
+    padding: 0;
+}
 
      
     

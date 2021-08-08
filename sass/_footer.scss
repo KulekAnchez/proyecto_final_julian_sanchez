@@ -1,19 +1,21 @@
 /* FOOTER */
 
 footer {
-    height: 75px;
+    height: 3.5rem;
     display: flex;
     align-items: center;
     a{
         text-align: center;
-        color: black;
+        color: $black;
     
         i{
-            font-size: 50px;    
+            font-size: 3rem;    
         }
     }
     p {
-        font-size: 25px;
+        font-size: 1rem;
         text-align: center;
+        
     }
 }
+
