@@ -10339,14 +10339,14 @@ main img {
 main p {
   padding: 2rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: 'Open Sans Condensed', sans-serif;
   color: whitesmoke;
 }
 
 @media (min-width: 768px) {
   p {
-    font-size: 5rem;
+    font-size: 2rem;
   }
 }
 
@@ -10374,5 +10374,21 @@ footer p {
 /* GALERIA */
 .carousel-item img {
   width: 100%;
-  height: 500px;
+  height: 33.3rem;
+}
+
+/* NOSOTROS */
+.caja {
+  background-color: #000;
+  width: 15rem;
+  height: 30rem;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  #cuerpo section {
+    display: flex;
+    flex-direction: row;
+  }
 }

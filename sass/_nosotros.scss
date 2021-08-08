@@ -1,0 +1,16 @@
+/* NOSOTROS */
+
+.caja {
+    background-color: $black;
+    width: 15rem;
+    height: 30rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px){
+    #cuerpo section {
+        display: flex;
+        flex-direction: row;
+    }
+}
