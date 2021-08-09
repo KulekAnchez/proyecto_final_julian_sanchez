@@ -25,10 +25,18 @@
     }
 }
 
+section{
+        border: rgb(61, 58, 58) solid 3px;
+        background-color: rgba(31, 27, 27, 0.555);
+        border-radius: 0;
+        padding: 5rem; 
+}
+
 @media (min-width: 768px){
     #cuerpo section {
         display: flex;
         flex-direction: row;
+        border-radius: 15%;
     }
 
     .caja {

@@ -10411,10 +10411,18 @@ footer p {
   padding: .5rem;
 }
 
+section {
+  border: #3d3a3a solid 3px;
+  background-color: rgba(31, 27, 27, 0.555);
+  border-radius: 0;
+  padding: 5rem;
+}
+
 @media (min-width: 768px) {
   #cuerpo section {
     display: flex;
     flex-direction: row;
+    border-radius: 15%;
   }
   .caja {
     margin-left: 1rem;
