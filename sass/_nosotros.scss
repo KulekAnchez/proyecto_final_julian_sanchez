@@ -18,7 +18,7 @@
         color: $black;
     }
     p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-family: 'Open Sans Condensed', sans-serif;
         text-align: center;
         padding: .5rem;
@@ -31,6 +31,17 @@ section{
         border-radius: 0;
         padding: 5rem; 
 }
+
+@media (min-width: 767px) and (max-width: 916px){
+    .caja{
+        width: 17rem;
+        p{
+            font-size: 1.1rem;
+        }
+    }
+}
+
+
 
 @media (min-width: 768px){
     #cuerpo section {
