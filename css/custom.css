@@ -10470,17 +10470,29 @@ img {
 }
 
 /* NOSOTROS */
-.caja {
-  background-color: rgba(245, 245, 245, 0.514);
-  width: 15rem;
-  height: 30rem;
-  margin: auto;
+section {
+  border: #3d3a3a solid 3px;
+  background-color: rgba(31, 27, 27, 0.555);
+  border-radius: 0;
+  padding: 5rem;
   margin-bottom: 2rem;
 }
 
+.caja {
+  background-color: rgba(245, 245, 245, 0.514);
+  width: 90%;
+  height: 45rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .caja img {
-  width: 100%;
-  height: 45%;
+  width: 35%;
+  height: 50%;
+  margin: auto;
   margin-bottom: .5rem;
 }
 
@@ -10498,30 +10510,24 @@ img {
   padding: .5rem;
 }
 
-section {
-  border: #3d3a3a solid 3px;
-  background-color: rgba(31, 27, 27, 0.555);
-  border-radius: 0;
-  padding: 5rem;
-  margin-bottom: 2rem;
-}
-
-@media (min-width: 767px) and (max-width: 916px) {
-  .caja {
-    width: 17rem;
-  }
-  .caja p {
-    font-size: 1.1rem;
-  }
-}
-
 @media (min-width: 768px) {
   #cuerpo section {
     display: flex;
-    flex-direction: row;
-    border-radius: 15%;
+    flex-direction: column;
   }
   .caja {
-    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30rem;
+    width: 90%;
+  }
+  .caja img {
+    height: 100%;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .caja p, .caja h2, .caja .h2, .caja h3, .caja .h3, .caja h4, .caja .h4, .caja h5, .caja .h5, .caja h6, .caja .h6 {
+    margin: 0 1rem;
   }
 }
