@@ -7,8 +7,8 @@ main{
 
     img{
         padding: 15px;
-        border: rgb(61, 58, 58) solid 3px;
-        background-color: rgba(31, 27, 27, 0.555);
+        border: $borde;
+        background-color: $bgcElementos;
         border-radius: 15%;       
     }
 

@@ -4,7 +4,7 @@ body{
     background-color: #0cbaba;
     background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
     height: 100%;
-    width: 100%;
+    
 }
 
 html {
@@ -18,6 +18,8 @@ h1 {
 // VARIABLES
 
 $black: #000;
+$borde: rgb(61, 58, 58) solid 3px;
+$bgcElementos: rgba(31, 27, 27, 0.555);
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
