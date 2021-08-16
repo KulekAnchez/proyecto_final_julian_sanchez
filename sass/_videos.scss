@@ -1,6 +1,43 @@
-.carousel-item {
-    img{
-            width: 100%;
-            height: 33.3rem;
+
+// VIDEOS
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    iframe{
+        height: 20rem;
+        width: 300px;
+        margin-bottom: 2rem;
     }
+}
+
+.vidDesktop{
+    display: none;
+}
+
+.vidMobile{
+    display: block;
+}
+
+@media (min-width: 768px){
+
+    section{
+        display: flex;
+        flex-direction: row;
+        iframe{
+            height: 20rem;
+            width: 20rem;
+            margin-bottom: 2rem;
+        }
+    }
+    .vidDesktop{
+        display: block;
+    }
+    
+    .vidMobile{
+        display: none;
+    }
+
+
 }

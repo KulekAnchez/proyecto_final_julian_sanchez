@@ -1,4 +1,8 @@
 /* PALETA DE COLORES */
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  height: 100%;
+}
+
 body {
   background-color: #0cbaba;
   background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
@@ -622,13 +626,7 @@ progress {
   color: #6c757d;
 }
 
-.container,
-.container-fluid,
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl,
-.container-xxl {
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
@@ -10321,13 +10319,7 @@ button {
   margin-right: 1rem;
 }
 
-
-.container-fluid,
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl,
-.container-xxl {
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   margin: 0;
   padding: 0;
 }
@@ -10480,40 +10472,53 @@ section {
 
 .caja {
   background-color: rgba(245, 245, 245, 0.514);
-  width: 90%;
-  height: 45rem;
+  width: 100%;
+  height: 50rem;
   margin: auto;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .caja img {
-  width: 35%;
-  height: 50%;
-  margin: auto;
-  margin-bottom: .5rem;
+  width: 50%;
+  height: 35%;
+  margin-left: 25%;
+  margin-bottom: 2rem;
 }
 
 .caja h2, .caja .h2, .caja h3, .caja .h3, .caja h4, .caja .h4, .caja h5, .caja .h5, .caja h6, .caja .h6 {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   color: #000;
 }
 
 .caja p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
   padding: .5rem;
+}
+
+.parrafoDesktop {
+  display: none;
+}
+
+.parrafoMobile {
+  display: block;
 }
 
 @media (min-width: 768px) {
   #cuerpo section {
     display: flex;
     flex-direction: column;
+  }
+  .parrafoMobile {
+    display: none;
+  }
+  .parrafoDesktop {
+    display: block;
   }
   .caja {
     display: flex;
@@ -10526,8 +10531,105 @@ section {
     height: 100%;
     width: 30%;
     margin-bottom: 0;
+    margin-left: 0;
   }
-  .caja p, .caja h2, .caja .h2, .caja h3, .caja .h3, .caja h4, .caja .h4, .caja h5, .caja .h5, .caja h6, .caja .h6 {
+  .caja p {
     margin: 0 1rem;
+    font-size: 1.25rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    padding: .3rem;
+  }
+  .caja h2, .caja .h2, .caja h3, .caja .h3, .caja h4, .caja .h4, .caja h5, .caja .h5, .caja h6, .caja .h6 {
+    margin: 0 1rem;
+    font-size: 2.5rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    padding: .5rem;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+section iframe {
+  height: 20rem;
+  width: 300px;
+  margin-bottom: 2rem;
+}
+
+.vidDesktop {
+  display: none;
+}
+
+.vidMobile {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  section {
+    display: flex;
+    flex-direction: row;
+  }
+  section iframe {
+    height: 20rem;
+    width: 20rem;
+    margin-bottom: 2rem;
+  }
+  .vidDesktop {
+    display: block;
+  }
+  .vidMobile {
+    display: none;
+  }
+}
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contacto h2, #contacto .h2, #contacto h3, #contacto .h3 {
+  color: #8d8d8d;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: 2rem;
+}
+
+#contacto p {
+  color: #8d8d8d;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: rgba(245, 245, 245, 0.384);
+}
+
+#contacto form input {
+  padding: .25rem;
+}
+
+#contacto form textarea {
+  resize: none;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  #contacto p {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+  #contacto form {
+    width: 50%;
+    padding: 3rem;
   }
 }
