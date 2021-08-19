@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "purge": "purgecss --css css/custom.css --content index.html --output css/redu.css"
   },
   "keywords": [],
   "author": "",
